@@ -10,6 +10,8 @@ A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcod
 
 `composer update zerosonesfun/bbbbcode`
 
+If that doesn't work, sometimes I find that completely removing the extension, and re-installing it works better. Also, you may need to uncheck, then re-check the box for this extension in your admin.
+
 ## Uninstall
 
 `composer remove zerosonesfun/bbbbcode`
