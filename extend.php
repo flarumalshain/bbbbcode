@@ -22,7 +22,7 @@ return [
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[tooltip="{TEXT1}"][/tooltip]',
-                '<span class="tooltip" data-tooltip="{TEXT1}"></span>'
+                '<span class="bb-tooltip" data-tooltip="{TEXT1}" data-placement="right"></span>'
             );
             $config->BBCodes->addCustom(
                 '[future]{TEXT3}[/future]',
