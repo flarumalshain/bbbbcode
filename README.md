@@ -1,17 +1,21 @@
-# bbbbcode (a flarum extension)
+# bbbbcode
 
-WIP
+A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcodes will be added.
 
 ## Install
 
 `composer require zerosonesfun/bbbbcode`
 
-## Upgrade
+## Update
 
 `composer update zerosonesfun/bbbbcode`
-`php flarum cache:clear`
-...and you might need to clear your browser cache and cookies too. Are you using cloudflare? Empty that too.
+
+## Uninstall
+
+`composer remove zerosonesfun/bbbbcode`
 
 ## Usage
 
-TBD
+Currently, here are the bbcodes which are added:
+
+Tooltip: `[tooltip="your tip here"]word[/tooltip]`
