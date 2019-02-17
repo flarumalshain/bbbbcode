@@ -16,17 +16,17 @@ use s9e\TextFormatter\Configurator;
 return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/zerosonesfun-chords/styles.css">';
+            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/zerosonesfun-bbbbcode/styles.css">';
         }),
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[chord]{TEXT1}[/chord]',
-                '<span class="chord">{TEXT1}</span>'
+                '[tooltip]{TEXT1}[/tooltip]',
+                '<span class="tooltip">{TEXT1}</span>'
             );
             $config->BBCodes->addCustom(
-                '[song]{TEXT2}[/song]',
-                '<p class="song show-chords">{TEXT2}</p>'
+                '[future]{TEXT2}[/future]',
+                '<span class="future">{TEXT2}</p>'
             );
         })
 ];
