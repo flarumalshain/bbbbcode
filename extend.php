@@ -21,12 +21,12 @@ return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[tooltip]{TEXT1}[/tooltip]',
-                '<span class="tooltip">{TEXT1}</span>'
+                '[tooltip="{TEXT1}"][/tooltip]',
+                '<span class="tooltip" data-tooltip="{TEXT1}"></span>'
             );
             $config->BBCodes->addCustom(
-                '[future]{TEXT2}[/future]',
-                '<span class="future">{TEXT2}</p>'
+                '[future]{TEXT3}[/future]',
+                '<span class="future">{TEXT3}</p>'
             );
         })
 ];
