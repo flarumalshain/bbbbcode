@@ -21,7 +21,7 @@ return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[tooltip="{TEXT1}" placement="{TEXT2}]{TEXT3}[/tooltip]',
+                '[tooltip="{TEXT1}" placement="{TEXT2}"]{TEXT3}[/tooltip]',
                 '<span class="bb-tooltip" data-tooltip="{TEXT1}" data-placement="{TEXT2}">{TEXT3}</span>'
             );
             $config->BBCodes->addCustom(
