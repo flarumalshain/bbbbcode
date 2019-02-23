@@ -25,7 +25,7 @@ return [
                 '<span class="bb-tooltip" data-tooltip="{TEXT1}" data-placement="{TEXT2}">{TEXT3}</span>'
             );
             $config->BBCodes->addCustom(
-                '[accordian header="{TEXT4}"]{TEXT5}[/accordian]',
+                '[accordion header="{TEXT4}"]{TEXT5}[/accordion]',
                 '<div class="accordion">
                     <input type="radio" name="radacc" class="accordion-chk" />
                     <h3 class="accordion-header">
