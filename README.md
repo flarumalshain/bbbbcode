@@ -8,13 +8,15 @@ A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcod
 
 ## Update
 
-1-
+1)
 
 `composer update zerosonesfun/bbbbcode`
 
-2- Deactivate and reactivate the extension in your admin.
-3- Go to your dashboard, click tools, click clear cache.
-4- Clear your browser cache, and any other caches like Cloudflare, if applicable.
+2) Deactivate and reactivate the extension in your admin.
+
+3) Go to your dashboard, click tools, click clear cache.
+
+4) Clear your browser cache, and any other caches like Cloudflare, if applicable.
 
 ## Uninstall
 
