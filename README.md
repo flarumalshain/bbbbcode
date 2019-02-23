@@ -26,11 +26,11 @@ A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcod
 
 Currently, here are the bbcodes which are added. If you are thinking... "that's not a lot," you're right. Eventually more will be added as I have time.
 
-Tooltip: `[tooltip="your tip here" placement="right"]word[/tooltip]`
+**Tooltip:** `[tooltip="your tip here" placement="right"]word[/tooltip]`
 
 (for "placement" you may use: top, bottom, left, right)
 
-Accordion:
+**Accordion:**
 ~~~
 [accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
 [accordion header="YOUR NEXT HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
