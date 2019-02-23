@@ -8,9 +8,13 @@ A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcod
 
 ## Update
 
+Step 1)
+
 `composer update zerosonesfun/bbbbcode`
 
-If that doesn't work, sometimes I find that completely removing the extension, and re-installing it works better. Also, you may need to uncheck, then re-check the box for this extension in your admin.
+Step 2) Deactivate and reactivate the extension in your admin.
+Step 3) Go to your dashboard, click tools, click clear cache.
+Step 4) Clear your browser cache, and any other caches like Cloudflare, if applicable.
 
 ## Uninstall
 
@@ -18,6 +22,8 @@ If that doesn't work, sometimes I find that completely removing the extension, a
 
 ## Usage
 
-Currently, here are the bbcodes which are added:
+Currently, here are the bbcodes which are added. If you are thinking... "that's not a lot," you're right. Eventually more will be added as I have time.
 
 Tooltip: `[tooltip="your tip here"]word[/tooltip]`
+
+Accordion: `[accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]`
