@@ -26,6 +26,7 @@ span[data-tooltip]::before {
   /* we don't want the text to wrap */
   white-space: nowrap;
   text-decoration: none;
+  z-index: 999;
 }
 span[data-tooltip]::after {
   width: 0;
