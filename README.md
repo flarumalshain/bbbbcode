@@ -30,4 +30,9 @@ Tooltip: `[tooltip="your tip here" placement="right"]word[/tooltip]`
 
 (for "placement" you may use: top, bottom, left, right)
 
-Accordion: `[accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]`
+Accordion:
+~~~
+[accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
+[accordion header="YOUR NEXT HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
+~~~
+Rinse and repeat.
