@@ -39,5 +39,19 @@ return [
                     </div>
                 </div>'
             );
+            $config->BBCodes->addCustom(
+                '[action]{TEXT6}[/action]',
+                '<div class="asterisk asterisk-3">
+                    <div class="asterisk-line"></div>
+                    <div class="asterisk-line"></div>
+                    <div class="asterisk-line"></div>
+                 </div>
+                    <span class="action-text">{TEXT6}</span>
+                    <div class="asterisk asterisk-3">
+                    <div class="asterisk-line"></div>
+                    <div class="asterisk-line"></div>
+                    <div class="asterisk-line"></div>
+                 </div>'
+            );
         })
 ];
