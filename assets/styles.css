@@ -193,27 +193,29 @@ span[data-tooltip][data-placement="bottom"]::after {
 .asterisk {
   position: relative;
   display: inline-block;
-  width: 13px;
-  height: 13px;
-  animation: spin 10s infinite linear;
-  padding: 3px;
+  width: 100px;
+  height: 100px;
+  animation: spin 5s infinite linear;
+  zoom: 10%;
+  vertical-align: top;
 }
 .asterisk-line {
   position: absolute;
-  top: calc(100% - 11px);
+  top: calc(50% - 10px);
   display: inline-bock;
-  width: 13px;
-  height: 2px;
+  width: 100px;
+  height: 20px;
+  background: #FF8000;
 }
 .asterisk-line {
     background: #FF8000; 
 }
-.asterisk-line:nth-child(2) {
-    transform: rotate(60deg);
-}
-.asterisk-line:nth-child(3) {
-    transform: rotate(120deg);
-}
+    .asterisk-line:nth-child(2) {
+      transform: rotate(60deg);
+    }
+    .asterisk-line:nth-child(3) {
+      transform: rotate(120deg);
+    }
 @keyframes spin {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
