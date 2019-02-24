@@ -115,7 +115,11 @@ span[data-tooltip][data-placement="bottom"]::after {
   margin: 0px;
   border: 0;
   border-radius: 0;	
-} 
+}
+
+input.accordion-chk:checked {
+    background-color: transparent;
+}
 
 .accordion h3 { 
   background: #3175c4 none; 
