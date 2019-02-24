@@ -53,5 +53,9 @@ return [
                     <div class="asterisk-line"></div>
                  </div>'
             );
+            $config->BBCodes->addCustom(
+                '[animal="{TEXT7}"]',
+                '<span class="{TEXT7}"></span>'
+            );
         })
 ];
