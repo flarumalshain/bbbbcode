@@ -258,7 +258,7 @@ input.accordion-chk:checked {
   --modal--border-radius: 2px;
   --modal--small-breakpoint: 30em;
   --modal--content-margin: 1rem;
-  --modal--margin-top: 3rem;
+  --modal--margin-top: 6rem;
 
   /* Modal Plain Screen Styles */
   --modal--plain-screen-overlay: #fff;
@@ -329,7 +329,7 @@ html {
  */
 .css-modal_inner {
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 50%;
   z-index: 20;
   width: var(--modal--max-width);
