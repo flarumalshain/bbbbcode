@@ -129,7 +129,7 @@ return [
                        </header>
 
                        <div class="css-modal_content">
-                       <p>{Text18}</p></div>
+                       <p>{TEXT18}</p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
