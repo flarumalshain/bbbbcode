@@ -57,5 +57,83 @@ return [
                 '[animal="{TEXT7}"]',
                 '<span class="{TEXT7}"></span>'
             );
+            $config->BBCodes->addCustom(
+                '[tour5 linktext="{TEXT8}" header1="{TEXT9}" content1="{TEXT10}" header2="{TEXT11}" content2="{TEXT12}" header3="{TEXT13}" content3="{TEXT14}" header4="{TEXT15}" content4="{TEXT16}" header5="{TEXT17}" content5="{TEXT18}"]',
+                '<a href="#modal-stackable">{TEXT8}</a>
+                    <section class="css-modal" id="modal-stackable" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+
+                       <div class="css-modal_inner">
+                       <header class="css-modal_header">
+                       <h2 id="stackable-label">{TEXT9}</h2>
+                       </header>
+
+                       <div class="css-modal_content">
+                       <p>{TEXT10}</p>
+                       <p><a href="#modal-stackable-2">Next</a></p>
+                       </div>
+                       </div>
+
+                       <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                    </section>
+
+                    <section class="css-modal" id="modal-stackable-2" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+
+                       <div class="css-modal_inner">
+                       <header class="css-modal_header">
+                       <h2 id="stackable-label">{TEXT11}</h2>
+                       </header>
+
+                       <div class="css-modal_content">
+                       <p>{TEXT12}</p>
+                       <p><a href="#modal-stackable-3">Next</a></p></div>
+                       </div>
+
+                       <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                    </section>
+
+                    <section class="css-modal" id="modal-stackable-3" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+
+                       <div class="css-modal_inner">
+                       <header class="css-modal_header">
+                       <h2 id="stackable-label">{TEXT13}</h2>
+                       </header>
+
+                       <div class="css-modal_content">
+                       <p>{TEXT14}</p>
+                       <p><a href="#modal-stackable-4">Next</a></p></div>
+                       </div>
+
+                       <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       </section>
+
+                    <section class="css-modal" id="modal-stackable-4" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+
+                       <div class="css-modal_inner">
+                       <header class="css-modal_header">
+                       <h2 id="stackable-label">{TEXT15}</h2>
+                       </header>
+
+                       <div class="css-modal_content">
+                       <p>{TEXT16}</p>
+                       <p><a href="#modal-stackable-5">Next</a></p></div>
+                       </div>
+
+                       <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                    </section>
+
+                    <section class="css-modal" id="modal-stackable-5" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+
+                       <div class="css-modal_inner">
+                       <header class="css-modal_header">
+                       <h2 id="stackable-label">{TEXT17}</h2>
+                       </header>
+
+                       <div class="css-modal_content">
+                       <p>{Text18}</p></div>
+                       </div>
+
+                       <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                    </section>'
+            );
         })
 ];
