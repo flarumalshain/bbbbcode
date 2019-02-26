@@ -137,8 +137,8 @@ return [
             );
              $config->BBCodes->addCustom(
                '[pop linktext="{TEXT19}" header="{TEXT20}" content="{TEXT21}"]',
-               '<a href="#modal-stackable">{TEXT19}</a>
-                    <section class="css-modal" id="modal-stackable" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
+               '<a href="#modal-stackable-not">{TEXT19}</a>
+                    <section class="css-modal" id="modal-stackable-not" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
 
                        <div class="css-modal_inner">
                        <header class="css-modal_header">
