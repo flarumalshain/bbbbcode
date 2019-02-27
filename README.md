@@ -57,3 +57,5 @@ As of version 0.2, the following BBcodes are available:
 *5 steps / tour stype popup:*
 
 `[pop5 linktext="Click here for a tour!" header1="Step 1" content1="Close your eyes." header2="Step 2" content2="Breathe in." header3="Step 3" content3="Breathe out." header4="Step 4" content4="Open your eyes." header5="Step 5" content5="Now you are present."]`
+
+This Flarum post has screenshots: https://discuss.flarum.org/d/18958-big-beautiful-bbcodes
