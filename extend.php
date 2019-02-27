@@ -69,8 +69,9 @@ return [
 
                        <div class="css-modal_content">
                        <p>{TEXT10}</p>
-                       <p><a href="#modal-stackable-2">Next</a></p>
                        </div>
+                         <div class="css-modal_footer">
+                         <p><a href="#!">Close</a> <a href="#modal-stackable-2" class="css-modal_button">Next</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -85,7 +86,9 @@ return [
 
                        <div class="css-modal_content">
                        <p>{TEXT12}</p>
-                       <p><a href="#modal-stackable-3">Next</a></p></div>
+                       </div>
+                         <div class="css-modal_footer">
+                         <p><a href="#!">Close</a> <a href="#modal-stackable-3" class="css-modal_button">Next</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -100,7 +103,9 @@ return [
 
                        <div class="css-modal_content">
                        <p>{TEXT14}</p>
-                       <p><a href="#modal-stackable-4">Next</a></p></div>
+                       </div>
+                         <div class="css-modal_footer">
+                         <p><a href="#!">Close</a> <a href="#modal-stackable-4" class="css-modal_button">Next</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -115,7 +120,9 @@ return [
 
                        <div class="css-modal_content">
                        <p>{TEXT16}</p>
-                       <p><a href="#modal-stackable-5">Next</a></p></div>
+                       </div>
+                         <div class="css-modal_footer">
+                         <p><a href="#!">Close</a> <a href="#modal-stackable-5" class="css-modal_button">Next</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -130,6 +137,8 @@ return [
 
                        <div class="css-modal_content">
                        <p>{TEXT18}</p></div>
+                         <div class="css-modal_footer">
+                         <p><a href="#!">Close</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -148,6 +157,8 @@ return [
                        <div class="css-modal_content">
                        <p>{TEXT21}</p>
                        </div>
+                       <div class="css-modal_footer">
+                         <p><a href="#!" class="css-modal_button">Close</a></p></div>
                        </div>
 
                        <a href="#!" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
