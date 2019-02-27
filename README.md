@@ -26,6 +26,7 @@ A Flarum extension which adds additional bbcodes. The code which gets generated 
 As of version 0.2, the following BBcodes are available:
 
 **Tooltip:** 
+
 `[tooltip="your tip here" placement="right"]word[/tooltip]`
 
 (for "placement" you may use: top, bottom, left, right)
@@ -38,14 +39,17 @@ As of version 0.2, the following BBcodes are available:
 (repeat the accordion BBcode as many times as needed)
 
 **Action:** 
+
 `[action]Walks into a wall[/action]`
 
 **Animal:** 
+
 `[animal="ducky"]`
 
 (Currently there are three animals available: ducky, monkey, and squirrel)
 
 **Popup:** 
+
 *Single:*
 
 `[pop linktext="Click here for a popup!" header="POP" content="This is a big beautiful popup, dude!"]`
