@@ -1,4 +1,5 @@
 # bbbbcode
+## Big Beautiful BBcode
 
 A flarum extension which adds additional bbcodes to Flarum. Overtime, more bbcodes will be added.
 
