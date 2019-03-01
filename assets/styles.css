@@ -281,12 +281,18 @@ input.accordion-chk:checked {
   --modal--mobile-header: #27aae2;
 
 }
-/**
- * Prevent overflow on HTML element
- */
-html {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; /* Native scroll momentum */
+
+@media (max-width: 30em) {
+  .css-modal_inner {
+    width: auto;
+    left: var(--modal--content-margin);
+    right: var(--modal--content-margin);
+    margin-left: 0;
+  }
+
+  .css-modal_close::after {
+    display: none;
+  }
 }
 
 /**
@@ -342,7 +348,6 @@ html {
   width: var(--modal--max-width);
   overflow-x: hidden;
   transform: translateX(-50%);
-
   -webkit-overflow-scrolling: touch; /* Native style momentum scrolling */
 }
 
@@ -420,7 +425,6 @@ html {
   background-color: var(--modal--background);
 }
 
-
 /**
  * Actual close button on modal
  */
@@ -447,15 +451,12 @@ html {
   animation: scaleDown .7s ease both;
 }
 
-
 /**
  * Hide overlay and close button
  */
 .css-modal.is-stacked .css-modal_close {
   opacity: 0;
 }
-
-
 
 /*
  * Global Theme Styles
