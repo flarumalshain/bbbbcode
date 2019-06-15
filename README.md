@@ -54,7 +54,7 @@ As of version 0.2, the following BBcodes are available:
 
 `[pop linktext="Click here for a popup!" header="POP" content="This is a big beautiful popup, dude!"]`
 
-*5 steps / tour stype popup:*
+*5 steps / tour style popup:*
 
 `[pop5 linktext="Click here for a tour!" header1="Step 1" content1="Close your eyes." header2="Step 2" content2="Breathe in." header3="Step 3" content3="Breathe out." header4="Step 4" content4="Open your eyes." header5="Step 5" content5="Now you are present."]`
 
