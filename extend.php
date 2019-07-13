@@ -169,21 +169,18 @@ return [
                '<p><audio controls>
                         <source src="{URL22}" type="audio/mpeg">
                         <source src="{URL23}" type="audio/ogg">
-                        <p>Your browser does not support this audio player.</p>
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
                '[audio mp3="{URL24}"]',
                '<p><audio controls>
                         <source src="{URL24}" type="audio/mpeg">
-                        <p>Your browser does not support this audio player.</p>
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
                '[audio ogg="{URL25}"]',
                '<p><audio controls>
                         <source src="{URL25}" type="audio/ogg">
-                        <p>Your browser does not support this audio player.</p>
                 </audio></p>'
             );
         })
