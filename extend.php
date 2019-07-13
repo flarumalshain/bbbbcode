@@ -169,8 +169,7 @@ return [
                '<audio controls>
                         <source src="{TEXT22}" type="audio/mpeg">
                         <source src="{TEXT23}" type="audio/ogg">
-                        <!-- fallback for non supporting browsers goes here -->
-                        <p>Your browser does not support HTML5 audio, but you can still 
+                        <p>Your browser does not support HTML5 audio but you can still 
                         <a href="{TEXT22}">download the music</a>.</p>
                 </audio>'
             );
@@ -178,8 +177,7 @@ return [
                '[audio mp3="{TEXT24}"]',
                '<audio controls>
                         <source src="{TEXT24}" type="audio/mpeg">
-                        <!-- fallback for non supporting browsers goes here -->
-                        <p>Your browser does not support HTML5 audio, but you can still 
+                        <p>Your browser does not support HTML5 audio but you can still 
                         <a href="{TEXT24}">download the music</a>.</p>
                 </audio>'
             );
@@ -187,8 +185,7 @@ return [
                '[audio ogg="{TEXT25}"]',
                '<audio controls>
                         <source src="{TEXT25}" type="audio/ogg">
-                        <!-- fallback for non supporting browsers goes here -->
-                        <p>Your browser does not support HTML5 audio, but you can still 
+                        <p>Your browser does not support HTML5 audio but you can still 
                         <a href="{TEXT25}">download the music</a>.</p>
                 </audio>'
             );
