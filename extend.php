@@ -165,26 +165,26 @@ return [
                     </section>'
             );
              $config->BBCodes->addCustom(
-               '[audio mp3="{TEXT22}" ogg="{TEXT23}"]',
+               '<p>[audio mp3="{URL22}" ogg="{URL23}"]',
                '<audio controls>
-                        <source src="{TEXT22}" type="audio/mpeg">
-                        <source src="{TEXT23}" type="audio/ogg">
+                        <source src="{URL22}" type="audio/mpeg">
+                        <source src="{URL23}" type="audio/ogg">
                         <p>Your browser does not support this audio player.</p>
-                </audio>'
+                </audio></p>'
             );
              $config->BBCodes->addCustom(
-               '[audio mp3="{TEXT24}"]',
+               '<p>[audio mp3="{URL24}"]',
                '<audio controls>
-                        <source src="{TEXT24}" type="audio/mpeg">
+                        <source src="{URL24}" type="audio/mpeg">
                         <p>Your browser does not support this audio player.</p>
-                </audio>'
+                </audio></p>'
             );
              $config->BBCodes->addCustom(
-               '[audio ogg="{TEXT25}"]',
+               '<p>[audio ogg="{URL25}"]',
                '<audio controls>
-                        <source src="{TEXT25}" type="audio/ogg">
+                        <source src="{URL25}" type="audio/ogg">
                         <p>Your browser does not support this audio player.</p>
-                </audio>'
+                </audio></p>'
             );
         })
 ];
