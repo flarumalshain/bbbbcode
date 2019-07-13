@@ -38,6 +38,14 @@ As of version 0.2, the following BBcodes are available:
 
 (repeat the accordion BBcode as many times as needed)
 
+**Audio:**
+
+`[audio mp3="https://archive.org/download/MLKDream/MLKDream_64kb.mp3" ogg="https://archive.org/download/MLKDream/MLKDream.ogg"]`
+`[audio mp3="https://archive.org/download/MLKDream/MLKDream_64kb.mp3"]`
+`[audio ogg="https://archive.org/download/MLKDream/MLKDream.ogg"]`
+
+(You may put a mp3 and ogg file together for maximum browser compatibility, or just post a mp3 alone or an ogg file alone.)
+
 **Action:** 
 
 `[action]Walks into a wall[/action]`
