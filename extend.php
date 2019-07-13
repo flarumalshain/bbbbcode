@@ -173,15 +173,15 @@ return [
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
-               '<p>[audio mp3="{URL24}"]',
-               '<audio controls>
+               '[audio mp3="{URL24}"]',
+               '<p><audio controls>
                         <source src="{URL24}" type="audio/mpeg">
                         <p>Your browser does not support this audio player.</p>
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
-               '<p>[audio ogg="{URL25}"]',
-               '<audio controls>
+               '[audio ogg="{URL25}"]',
+               '<p><audio controls>
                         <source src="{URL25}" type="audio/ogg">
                         <p>Your browser does not support this audio player.</p>
                 </audio></p>'
