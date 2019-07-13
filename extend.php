@@ -170,7 +170,7 @@ return [
                         <source src="{TEXT22}" type="audio/mpeg">
                         <source src="{TEXT23}" type="audio/ogg">
                         <p>Your browser does not support HTML5 audio but you can still 
-                        <a href="{TEXT22}">download the music</a>.</p>
+                        <a href="{TEXT22}">download the music</a></p>
                 </audio>'
             );
              $config->BBCodes->addCustom(
@@ -178,7 +178,7 @@ return [
                '<audio controls>
                         <source src="{TEXT24}" type="audio/mpeg">
                         <p>Your browser does not support HTML5 audio but you can still 
-                        <a href="{TEXT24}">download the music</a>.</p>
+                        <a href="{TEXT24}">download the music</a></p>
                 </audio>'
             );
              $config->BBCodes->addCustom(
@@ -186,7 +186,7 @@ return [
                '<audio controls>
                         <source src="{TEXT25}" type="audio/ogg">
                         <p>Your browser does not support HTML5 audio but you can still 
-                        <a href="{TEXT25}">download the music</a>.</p>
+                        <a href="{TEXT25}">download the music</a></p>
                 </audio>'
             );
         })
