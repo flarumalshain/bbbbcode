@@ -38,6 +38,15 @@ As of version 0.2, the following BBcodes are available:
 ~~~
 (repeat the accordion BBcode as many times as needed)
 
+**Chat:**
+~~~
+[chat-a="Why did the chicken cross the road?" who="Me"]
+[chat-b="It was hungry?" who="Mary"]
+[space][/space]
+~~~
+(repeat as many times as needed alternating chat-a and chat-b)
+(space BBcode at end of chat is only needed if you need to type something else after the chat)
+
 **Audio:**
 ~~~
 [audio mp3="https://archive.org/download/MLKDream/MLKDream_64kb.mp3" ogg="https://archive.org/download/MLKDream/MLKDream.ogg"]
