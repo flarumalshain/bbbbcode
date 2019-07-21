@@ -557,6 +557,7 @@ input.accordion-chk:checked {
   border-radius: 5px;
   color: #222222;
   width: 45%;
+  clear: both;
 }
 .chat-b {
   background-color: #85C1E9;
@@ -565,6 +566,7 @@ input.accordion-chk:checked {
   color: #21618C;
   float: right;
   width: 45%;
+  clear: both;
 }
 .space {
   clear: both;
