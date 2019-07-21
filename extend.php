@@ -183,5 +183,21 @@ return [
                         <source src="{URL25}" type="audio/ogg">
                 </audio></p>'
             );
+             $config->BBCodes->addCustom(
+               '[chat-a="{TEXT27}" who="{TEXT26}"]',
+               '<p class="chat-a">
+                    <strong>{TEXT26}:</strong> {TEXT27}
+                </p>'
+            );
+             $config->BBCodes->addCustom(
+               '[chat-b="{TEXT29}" who="{TEXT28}"]',
+               '<p class="chat-b">
+                    <strong>{TEXT28}:</strong> {TEXT29}
+                </p>'
+            );
+             $config->BBCodes->addCustom(
+               '[space]',
+               '<p class="space"></p>'
+            );
         })
 ];
