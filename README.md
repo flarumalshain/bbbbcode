@@ -42,10 +42,12 @@ As of version 0.2, the following BBcodes are available:
 ~~~
 [chat-a="Why did the chicken cross the road?" who="Me"]
 [chat-b="It was hungry?" who="Mary"]
+[chat-a="No! Wrong!" who="Me"]
 [space][/space]
 ~~~
 (repeat as many times as needed alternating chat-a and chat-b)
-(space BBcode at end of chat is only needed if you need to type something else after the chat)
+
+("space" BBcode at end of chat is optional - it adds some extra space)
 
 **Audio:**
 ~~~
