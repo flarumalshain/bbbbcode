@@ -549,3 +549,25 @@ input.accordion-chk:checked {
 .css-modal_inner .css-modal_footer a {
     margin-right: 20px;
 }
+
+/* Chat */
+.chat-a {
+  background-color: #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  color: #222222;
+  width: 45%;
+}
+.chat-b {
+  background-color: #85C1E9;
+  padding: 15px;
+  border-radius: 5px;
+  color: #21618C;
+  float: right;
+  width: 45%;
+}
+.space {
+  clear: both;
+  display: block;
+  margin-bottom: 10px;
+}
