@@ -33,7 +33,9 @@ As of version 0.2, the following BBcodes are available:
 
 **Spoiler:** 
 
-`[!]I wanted to make you click something in order to see this just because.[/!]`
+`[!="I wanted to make you click something in order to see this just because."]Click here[/!]`
+
+(The hidden part is placed inside the opening tag, and then the word(s) you click on are in between the opening and closing tags.)
 
 **Accordion:**
 ~~~
