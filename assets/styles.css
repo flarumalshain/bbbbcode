@@ -573,3 +573,24 @@ input.accordion-chk:checked {
   display: block;
   margin-bottom: 10px;
 }
+
+/* Spoiler */
+.spoiler {
+  display: none;
+}
+
+.show {
+  display: none; 
+}
+
+.hide:target + .show {
+  display: inline; 
+}
+
+.hide:target {
+  display: none; 
+}
+
+.hide:target ~ .spoiler {
+  display: inline;
+}
