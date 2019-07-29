@@ -594,3 +594,7 @@ input.accordion-chk:checked {
 .hide:target ~ .spoiler {
   display: inline;
 }
+
+.getinline p {
+    display: inline;
+}
