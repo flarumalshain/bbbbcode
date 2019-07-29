@@ -201,11 +201,11 @@ return [
             );
              $config->BBCodes->addCustom(
                '[spoiler="{TEXT30}"]{TEXT31}[/spoiler]',
-               '<a href="#hide" class="hide btn" id="hide"><i class="fas fa-chevron-down">{TEXT31}</i></a>
-                <a href="#show" class="show btn" id="show"><i class="fas fa-chevron-up">{TEXT31}</i></a>
+               '<a href="#hide" class="hide btn" id="hide"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-down"></i></a>
+                <a href="#show" class="show btn" id="show"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-up"></i></a>
                 <div class="spoiler">
                      <p class="spoiler-content">{TEXT30}</p>
                 </div>'
-            ); 
+            );
         })
 ];
