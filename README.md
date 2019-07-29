@@ -31,6 +31,10 @@ As of version 0.2, the following BBcodes are available:
 
 (for "placement" you may use: top, bottom, left, right)
 
+**Spoiler:** 
+
+`[!]I wanted to make you click something in order to see this just because.[/!]`
+
 **Accordion:**
 ~~~
 [accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
