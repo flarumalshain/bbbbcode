@@ -4,7 +4,7 @@
  * This file is part of Flarum.
  *
  * (c) Toby Zerner <toby.zerner@gmail.com> (Flarum)
- * (c) Two Narwhals (bbbbcode extension)
+ * (c) Billy Wilcosky (bbbbcode extension)
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
@@ -199,5 +199,13 @@ return [
                '[space]',
                '<p class="space"></p>'
             );
+             $config->BBCodes->addCustom(
+               '[!]{TEXT30}[/!]',
+               '<a href="#hide" class="hide btn" id="hide"><i class="fas fa-chevron-down"></i></a>
+                <a href="#show" class="show btn" id="show"><i class="fas fa-chevron-up"></i></a>
+                <div class="spoiler">
+                     <p class="spoiler-content">{TEXT30}</p>
+                </div>'
+            ); 
         })
 ];
