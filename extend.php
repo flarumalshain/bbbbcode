@@ -200,9 +200,9 @@ return [
                '<p class="space"></p>'
             );
              $config->BBCodes->addCustom(
-               '[!]{TEXT30}[/!]',
-               '<a href="#hide" class="hide btn" id="hide"><i class="fas fa-chevron-down"></i></a>
-                <a href="#show" class="show btn" id="show"><i class="fas fa-chevron-up"></i></a>
+               '[!="{TEXT30}"]{TEXT31}[/!]',
+               '<a href="#hide" class="hide btn" id="hide">{TEXT31} <i class="fas fa-chevron-down"></i></a>
+                <a href="#show" class="show btn" id="show">{TEXT31} <i class="fas fa-chevron-up"></i></a>
                 <div class="spoiler">
                      <p class="spoiler-content">{TEXT30}</p>
                 </div>'
