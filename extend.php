@@ -70,10 +70,10 @@ return [
                        <p>{TEXT10}</p>
                        </div>
                          <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);">Close</a> <a href="#modal-stackable-2" class="css-modal_button">Next</a></p></div>
+                         <p><a href="close-pop">Close</a> <a href="#modal-stackable-2" class="css-modal_button">Next</a></p></div>
                        </div>
 
-                       <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       <a href="close-pop" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
                     </section>
 
                     <section class="css-modal" id="modal-stackable-2" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
@@ -87,10 +87,10 @@ return [
                        <p>{TEXT12}</p>
                        </div>
                          <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);">Close</a> <a href="#modal-stackable-3" class="css-modal_button">Next</a></p></div>
+                         <p><a href="close-pop">Close</a> <a href="#modal-stackable-3" class="css-modal_button">Next</a></p></div>
                        </div>
 
-                       <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       <a href="close-pop" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
                     </section>
 
                     <section class="css-modal" id="modal-stackable-3" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
@@ -104,10 +104,10 @@ return [
                        <p>{TEXT14}</p>
                        </div>
                          <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);">Close</a> <a href="#modal-stackable-4" class="css-modal_button">Next</a></p></div>
+                         <p><a href="close-pop">Close</a> <a href="#modal-stackable-4" class="css-modal_button">Next</a></p></div>
                        </div>
 
-                       <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       <a href="close-pop" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
                        </section>
 
                     <section class="css-modal" id="modal-stackable-4" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
@@ -121,10 +121,10 @@ return [
                        <p>{TEXT16}</p>
                        </div>
                          <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);">Close</a> <a href="#modal-stackable-5" class="css-modal_button">Next</a></p></div>
+                         <p><a href="close-pop">Close</a> <a href="#modal-stackable-5" class="css-modal_button">Next</a></p></div>
                        </div>
 
-                       <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       <a href="close-pop" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
                     </section>
 
                     <section class="css-modal" id="modal-stackable-5" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
@@ -137,7 +137,7 @@ return [
                        <div class="css-modal_content">
                        <p>{TEXT18}</p></div>
                          <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);">Close</a></p></div>
+                         <p><a href="close-pop">Close</a></p></div>
                        </div>
 
                        <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
@@ -157,10 +157,10 @@ return [
                        <p>{TEXT21}</p>
                        </div>
                        <div class="css-modal_footer">
-                         <p><a href="javascript:void(0);" class="css-modal_button">Close</a></p></div>
+                         <p><a href="close-pop" class="css-modal_button">Close</a></p></div>
                        </div>
 
-                       <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
+                       <a href="close-pop" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
                     </section>'
             );
              $config->BBCodes->addCustom(
