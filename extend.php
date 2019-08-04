@@ -70,7 +70,7 @@ return [
                        <p>{TEXT10}</p>
                        </div>
                          <div class="css-modal_footer">
-                         <p><a href="">Close</a> <a href="#modal-stackable-2" class="css-modal_button">Next</a></p></div>
+                         <p><a href="javascript:void(0);">Close</a> <a href="#modal-stackable-2" class="css-modal_button">Next</a></p></div>
                        </div>
 
                        <a href="javascript:void(0);" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
