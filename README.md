@@ -23,7 +23,7 @@ A Flarum extension which adds additional bbcodes. The code which gets generated 
 
 ## Usage
 
-As of version 0.2, the following BBcodes are available:
+The following BBcodes are available:
 
 **Tooltip:** 
 
@@ -75,12 +75,8 @@ As of version 0.2, the following BBcodes are available:
 
 **Popup:** 
 
-*Single:*
+`[pop button="Click Here" title="Hello" content="Thank you for being a friend."]`
 
-`[pop linktext="Click here for a popup!" header="POP" content="This is a big beautiful popup, dude!"]`
+(_Important notice:_ Previous versions had a popup, but this is an updated even more minimally coded version. I also decided to change the verbiage used inside of the BBcode. Which means if you used this extension prior to version 1.0, if you update, you existing popups will be broken. You will need to rewrite the BBcode in those posts. You don't need to delete everything, but you will need to change "linktext=" to "button=" and "header=" to "title=".)
 
-*5 steps / tour style popup:*
-~~~
-[pop5 linktext="Click here for a tour!" header1="Step 1" content1="Close your eyes." header2="Step 2" content2="Breathe in." header3="Step 3" content3="Breathe out." header4="Step 4" content4="Open your eyes." header5="Step 5" content5="Now you are present."]
-~~~
 This Flarum post has screenshots: https://discuss.flarum.org/d/18958-big-beautiful-bbcodes
