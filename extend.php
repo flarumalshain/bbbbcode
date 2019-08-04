@@ -57,24 +57,19 @@ return [
                 '<span class="{TEXT7}"></span>'
             );
              $config->BBCodes->addCustom(
-               '[pop linktext="{TEXT19}" header="{TEXT20}" content="{TEXT21}"]',
-               '<a href="#modal-stackable-not">{TEXT19}</a>
-                    <section class="css-modal" id="modal-stackable-not" tabindex="-1" role="dialog" aria-labelledby="stackable-label" aria-hidden="true">
-
-                       <div class="css-modal_inner">
-                       <header class="css-modal_header">
-                       <h2 id="stackable-label">{TEXT20}</h2>
-                       </header>
-
-                       <div class="css-modal_content">
-                       <p>{TEXT21}</p>
-                       </div>
-                       <div class="css-modal_footer">
-                         <p><a href="" onclick="return false" class="css-modal_button">Close</a></p></div>
-                       </div>
-
-                       <a href="" onclick="return false" class="css-modal_close" title="Close this modal" data-dismiss="modal" data-close="Close">&times;</a>
-                    </section>'
+               '[pop button="{TEXT19}" title="{TEXT20}" content="{TEXT21}"]',
+               '<div id="popmain">
+                    <a href="#popmodal" class="popbtn">{TEXT19}</a>
+                </div>
+                    <div id="popmodal">
+                    <div class="popcontainer">
+                            <h2>{TEXT20}</h2>
+                                <p>{TEXT21}</p>
+                    <div class="poplink">
+                    <a href="#popmain" class="popbtn"><i class="fas fa-window-close"></i> close</a>
+                    </div>
+                </div>
+            </div>'
             );
              $config->BBCodes->addCustom(
                '[audio mp3="{URL22}" ogg="{URL23}"]',
