@@ -77,6 +77,6 @@ The following BBcodes are available:
 
 `[pop button="Click Here" title="Hello" content="Thank you for being a friend."]`
 
-(_Important notice:_ Previous versions had a popup, but this is an updated even more minimally coded version. I also decided to change the verbiage used inside of the BBcode. Which means if you used this extension prior to version 1.0, if you update, you existing popups will be broken. You will need to rewrite the BBcode in those posts. You don't need to delete everything, but you will need to change "linktext=" to "button=" and "header=" to "title=".)
+(_Important notice:_ Previous versions had a popup, but this is an updated even more minimally coded version. I also decided to change the verbiage used inside of the BBcode. Which means if you used this extension prior to version 1.0 and used the popup BBcode, if you update, your existing popups will be broken. You will need to rewrite the BBcode in those posts. You don't need to delete everything, but you will need to change "linktext=" to "button=" and "header=" to "title=".)
 
 This Flarum post has screenshots: https://discuss.flarum.org/d/18958-big-beautiful-bbcodes
