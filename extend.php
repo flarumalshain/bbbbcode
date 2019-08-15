@@ -25,10 +25,11 @@ return [
             );
             $config->BBCodes->addCustom(
                 '[accordion header="{TEXT4}"]{TEXT5}[/accordion]',
-                '<div class="accordion">
+                <<<XML
+                <div class="accordion">
                     <input type="radio" name="radacc" class="accordion-chk" />
                     <h3 class="accordion-header Button--primary">
-                        {TEXT4}
+                        <xsl:apply-templates/>
                     <span class="acc-icon"><i class="fas fa-chevron-circle-down"></i></span>
                     </h3>
                     <div class="accordion-content Button">
@@ -36,7 +37,8 @@ return [
                         {TEXT5}
                         </p>
                     </div>
-                </div>'
+                </div>
+                XML
             );
             $config->BBCodes->addCustom(
                 '[action]{TEXT6}[/action]',
