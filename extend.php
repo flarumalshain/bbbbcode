@@ -29,6 +29,7 @@ return [
                 <div class="accordion">
                     <input type="radio" name="radacc" class="accordion-chk" />
                     <h3 class="accordion-header Button--primary">
+                        {TEXT4}
                         <xsl:apply-templates/>
                     <span class="acc-icon"><i class="fas fa-chevron-circle-down"></i></span>
                     </h3>
