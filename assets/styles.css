@@ -99,7 +99,21 @@ span[data-tooltip][data-placement="bottom"]::after {
 
 /* accordion */
 
-.accordion { width: 100%; position: relative; }
+.accordion { 
+   width: 100%;
+   position: relative;
+}
+.accordion-content {
+  width: 100%;
+  display: block !important;
+}
+.accordion-header:focus {
+  border: 0;
+  outline: none;
+}
+.accordion-header {
+  border-radius: 4px;
+}
 .accordion-chk { 
   width: 100%;
   position: absolute; 
@@ -116,49 +130,31 @@ span[data-tooltip][data-placement="bottom"]::after {
   padding: 0 20px;
   z-index: 2;
   margin: 0px;
-  border: 0;
-  border-radius: 0;	
 }
 
 input.accordion-chk:checked {
     background-color: transparent;
 }
 
+input.accordion-chk:focus {
+  border: 0;
+  outline: none;
+}
+
 .accordion h3 { 
-  background: #3175c4 none; 
-  border: 1px solid #3175c4 !important; 
+  border: none;
   position: relative; 
-  padding: 10px; 
-  color: #fff; 
-  font-size: 16px; 
-  font-weight: normal; 
-  font-family: arial; 
+  padding: 10px;
   margin: 0;
   z-index: 1;
 }
 
-.accordion h3 .acc-icon { 
-  width: 0; 
-  height: 0; 
-  position: absolute; 
-  right: 10px; 
-  top: 15px; 
-  border-left: 5px solid transparent; 
-  border-right: 5px solid transparent; 
-  border-top: 5px solid #fff; 
-  border-bottom: 5px solid transparent; 
-}
-
-.accordion .accordion-chk:checked + h3 > .acc-icon { 
-  border-left: 5px solid transparent; 
-  border-right: 5px solid transparent; 
-  border-bottom: 5px solid #fff; 
-  border-top: 5px solid transparent; 
-  top: 10px; 
+.acc-icon {
+    float: right;
 }
 
 .accordion .accordion-chk:checked + h3 + div.accordion-content { 
-   opacity: 1;
+    opacity: 1;
    -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -173,9 +169,9 @@ input.accordion-chk:checked {
 }
 
 .accordion-content { 
-   opacity: 0;
+    opacity: 0;
     padding: 15px;
-    overflow: hidden;
+    overflow: hidden !important;
     max-height: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -189,8 +185,13 @@ input.accordion-chk:checked {
     -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    border: 1px solid #3175c4;
     margin-bottom: 2px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: left !important;
+}
+.accordion.Button--primary {
+    border-radius: 5px;
 }
 
 /* action */
@@ -259,16 +260,7 @@ input.accordion-chk:checked {
 
 /* popup */
 
-a.popbtn {
-  text-decoration: none;
-  color: #777;
-  background-color: transparent;
-  padding: 5px 15px;
-  border: 1px solid #777;
-  border-radius: 4px;
-}
-
-#popmodal {
+div[id^="popmodal-"] {
   position: fixed;
   display: flex;
   top: 0;
@@ -292,34 +284,37 @@ a.popbtn {
 
 .popcontainer h2 {
   text-align: center;
+  margin-top:0;
 }
 
 .popcontainer .poplink {
   text-align: center;
 }
 
-#popmodal:target {
+div[id^="popmodal-"]:target {
   opacity: 1;
   z-index: 100;
 }
 
 /* Chat */
 .chat-a {
-  background-color: #ccc;
+  display: block;
   padding: 15px;
   border-radius: 5px;
-  color: #222222;
   width: 45%;
+  text-align: left;
   clear: both;
+  cursor: default;
 }
 .chat-b {
-  background-color: #85C1E9;
+  display: block;
   padding: 15px;
   border-radius: 5px;
-  color: #21618C;
   float: right;
   width: 45%;
+  text-align: left;
   clear: both;
+  cursor: default;
 }
 .space {
   clear: both;
@@ -332,19 +327,19 @@ a.popbtn {
   display: none;
 }
 
-.show {
+a[class^="show-"] {
   display: none; 
 }
 
-.hide:target + .show {
+a[class^="hide-"]:target + a[class^="show-"] {
   display: inline; 
 }
 
-.hide:target {
+a[class^="hide-"]:target {
   display: none; 
 }
 
-.hide:target ~ .spoiler {
+a[class^="hide-"]:target ~ .spoiler {
   display: inline;
 }
 
