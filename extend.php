@@ -27,11 +27,11 @@ return [
                 '[accordion header="{TEXT4}"]{TEXT5}[/accordion]',
                 '<div class="accordion">
                     <input type="radio" name="radacc" class="accordion-chk" />
-                    <h3 class="accordion-header">
+                    <h3 class="accordion-header Button--primary">
                         {TEXT4}
-                    <span class="acc-icon"></span>
+                    <span class="acc-icon"><i class="fas fa-chevron-circle-down"></i></span>
                     </h3>
-                    <div class="accordion-content">
+                    <div class="accordion-content Button">
                         <p>
                         {TEXT5}
                         </p>
@@ -57,16 +57,16 @@ return [
                 '<span class="{TEXT7}"></span>'
             );
              $config->BBCodes->addCustom(
-               '[pop button="{TEXT19}" title="{TEXT20}" content="{TEXT21}"]',
+               '[pop button="{TEXT8}" title="{TEXT9}" content="{ANYTHING}"]',
                '<div id="popmain">
-                    <a href="#popmodal" class="popbtn">{TEXT19}</a>
+                    <a href="#popmodal-{TEXT9}" class="popbtn Button Button--primary">{TEXT8}</a>
                 </div>
-                    <div id="popmodal">
+                    <div id="popmodal-{TEXT9}">
                     <div class="popcontainer">
-                            <h2>{TEXT20}</h2>
-                                <p>{TEXT21}</p>
+                            <h2>{TEXT9}</h2>
+                                <p>{ANYTHING}</p>
                     <div class="poplink">
-                    <a href="#popmain" class="popbtn"><i class="fas fa-window-close"></i> close</a>
+                    <a href="#popmain" class="popbtn Button Button--primary"><i class="fas fa-window-close"></i> close</a>
                     </div>
                 </div>
             </div>'
@@ -92,13 +92,13 @@ return [
             );
              $config->BBCodes->addCustom(
                '[chat-a="{TEXT27}" who="{TEXT26}"]',
-               '<p class="chat-a">
+               '<p class="chat-a Button">
                     <strong>{TEXT26}:</strong> {TEXT27}
                 </p>'
             );
              $config->BBCodes->addCustom(
                '[chat-b="{TEXT29}" who="{TEXT28}"]',
-               '<p class="chat-b">
+               '<p class="chat-b Button--primary">
                     <strong>{TEXT28}:</strong> {TEXT29}
                 </p>'
             );
@@ -107,11 +107,11 @@ return [
                '<p class="space"></p>'
             );
              $config->BBCodes->addCustom(
-               '[spoiler="{TEXT30}"]{TEXT31}[/spoiler]',
-               '<a href="#hide" class="hide btn" id="hide"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-down"></i></a>
-                <a href="#show" class="show btn" id="show"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-up"></i></a>
+               '[spoiler="{TEXT31}"]{ANYTHING}[/spoiler]',
+               '<a href="#hide-{TEXT31}" class="hide-{TEXT31} btn" id="hide-{TEXT31}"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-down"></i></a>
+                <a href="#show-{TEXT31}" class="show-{TEXT31} btn" id="show-{TEXT31}"><span class="getinline">{TEXT31}</span> <i class="fas fa-chevron-up"></i></a>
                 <div class="spoiler">
-                     <p class="spoiler-content">{TEXT30}</p>
+                     <p class="spoiler-content">{ANYTHING}</p>
                 </div>'
             );
         })
