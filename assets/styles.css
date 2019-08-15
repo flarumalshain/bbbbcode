@@ -296,6 +296,10 @@ div[id^="popmodal-"]:target {
   z-index: 100;
 }
 
+a.popbtn.Button.Button--primary {
+    border-bottom: none;
+}
+
 /* Chat */
 .chat-a {
   display: block;
