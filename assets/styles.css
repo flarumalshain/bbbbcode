@@ -336,7 +336,8 @@ a[class^="show-"] {
 }
 
 a[class^="hide-"]:target + a[class^="show-"] {
-  display: inline; 
+  display: inline;
+  border-bottom: none;
 }
 
 a[class^="hide-"]:target {
