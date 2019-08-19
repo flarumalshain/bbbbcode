@@ -305,7 +305,7 @@ a.popbtn.Button.Button--primary {
 
 /* Chat */
 .chat-a {
-  display: inline-block;
+  display: block;
   padding: 15px;
   border-radius: 5px;
   width: 45%;
@@ -316,7 +316,7 @@ a.popbtn.Button.Button--primary {
   white-space:inherit;
 }
 .chat-b {
-  display: inline-block;
+  display: block;
   padding: 15px;
   border-radius: 5px;
   float: right;
