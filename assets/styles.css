@@ -312,6 +312,7 @@ a.popbtn.Button.Button--primary {
   text-align: left;
   clear: both;
   cursor: default;
+  overflow-wrap: break-word;
 }
 .chat-b {
   display: block;
@@ -322,6 +323,7 @@ a.popbtn.Button.Button--primary {
   text-align: left;
   clear: both;
   cursor: default;
+  overflow-wrap: break-word;
 }
 .space {
   clear: both;
