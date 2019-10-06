@@ -358,3 +358,34 @@ a[class^="hide-"]:target ~ .spoiler {
 .getinline p {
     display: inline;
 }
+
+/* Quick font colors */
+
+.bbred {
+    color: #eb7070;
+}
+.bborange {
+    color: #fec771;
+}
+.bbyellow {
+    color: #e6e56c;
+}
+.bbgreen {
+    color: #64e291;
+}
+.bbblue {
+    color: #3c70a4;
+}
+.bbpurple {
+    color: #512c96;
+}
+.bbhighlight {
+    border-radius: 1em 0 1em 0;
+    text-shadow: 1px 1px 1px #fff;
+    background-image: 
+    linear-gradient(-100deg, 
+      rgba(255,250,150,0.15),
+      rgba(255,250,150,0.8) 100%, 
+      rgba(255,250,150,0.25)
+    );
+}
