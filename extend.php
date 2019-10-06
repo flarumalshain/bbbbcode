@@ -108,11 +108,17 @@ return [
             );
              $config->BBCodes->addCustom(
                '[spoiler="{ANYTHING2}"]{ANYTHING3}[/spoiler]',
-               '<a href="#hide-{ANYTHING2}{ANYTHING3}" class="hide-{ANYTHING2}{ANYTHING3} btn" id="hide-{ANYTHING2}{ANYTHING3}"><span class="getinline">{ANYTHING2}</span> <i class="fas fa-chevron-down"></i></a>
-                <a href="#show-{ANYTHING2}{ANYTHING3}" class="show-{ANYTHING2}{ANYTHING3} btn" id="show-{ANYTHING2}{ANYTHING3}"><span class="getinline">{ANYTHING2}</span> <i class="fas fa-chevron-up"></i></a>
-                <div class="spoiler">
-                     <p class="spoiler-content">{ANYTHING3}</p>
+               '<input type="checkbox"  id="bbspoiler-{ANYTHING2}" /> 
+                <label for="bbspoiler-{ANYTHING2}" >{ANYTHING2}</label>
+                <div class="bbspoiler">
+                {ANYTHING3}
                 </div>'
+            );
+             $config->BBCodes->addCustom(
+               '[blur]{ANYTHING4}[/blur]',
+               '<p class="bbspoiler-blur-{ANYTHING4}">
+                {ANYTHING4}
+                </p>'
             );
              $config->BBCodes->addCustom(
                '[red]{TEXT30}[/red]',
