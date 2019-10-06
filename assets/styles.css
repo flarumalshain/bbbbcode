@@ -334,29 +334,121 @@ a.popbtn.Button.Button--primary {
 }
 
 /* Spoiler */
-.spoiler {
+
+input[id^="bbspoiler"]{
+ display: none;
+}
+input[id^="bbspoiler"] + label {
+  display: block;
+  cursor: pointer;
+  transition: all .6s;
+  font-weight: bold;
+}
+input[id^="bbspoiler"] + label::after {
+  content:"\f078";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 10px;
+}
+input[id^="bbspoiler"]:checked + label {
+  color: #ccc;
+}
+input[id^="bbspoiler"]:checked + label::after {
+  content:"\f077";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 10px;
+}
+input[id^="bbspoiler"] ~ .bbspoiler {
+  overflow: hidden;
+  opacity: 0;
+  transition: all .6s;
   display: none;
 }
-
-a[class^="show-"] {
-  display: none; 
+input[id^="bbspoiler"]:checked + label + .bbspoiler{
+  opacity: 1;
+  display: block;
 }
 
-a[class^="hide-"]:target + a[class^="show-"] {
-  display: inline;
-  border-bottom: none !important;
+/* Blur */
+
+p[class^="bbspoiler-blur"] {
+  position: relative;
+  color: transparent;
+  text-shadow: 0 0 20px #000;
+  cursor: help;
+  padding-left: 5px;
 }
 
-a[class^="hide-"]:target {
-  display: none; 
+p[class^="bbspoiler-blur"]::before, p[class^="bbspoiler-blur"]::after {
+  display: block;
+  position: absolute;
+  line-height: 1;
+  color: #222;
+  text-align: center;
+  text-shadow: none;
 }
 
-a[class^="hide-"]:target ~ .spoiler {
-  display: inline;
+p[class^="bbspoiler-blur"]::after {
+  opacity: 0;
+  top: 50%;
+  left: calc(50% - 36px);
+  width: 60px;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  clip: rect(0, 72px, 72px, 0);
+  content: '3 2 1';  
 }
 
-.getinline p {
-    display: inline;
+p[class^="bbspoiler-blur"]:hover {
+  color: #222;
+  text-shadow: 0 0 0 transparent;
+  transition: all 1s;
+  transition-delay: 4s;
+}
+
+p[class^="bbspoiler-blur"]:hover::before {
+  animation: bbcountdown-before 5s forwards;
+}
+
+p[class^="bbspoiler-blur"]:hover::after {
+  animation: bbcountdown-after 5s forwards;
+}
+
+@keyframes bbcountdown-before {
+  25% {
+    transform: translateY(-24px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+    transform: translateY(-24px);
+  }
+}
+
+@keyframes bbcountdown-after {
+  25% {
+    opacity: 1;
+    clip: rect(0, 72px, 72px, 0);
+    transform: translateY(0);
+    animation-timing-function: steps(1, start);
+  }
+  50% {
+    clip: rect(72px, 72px, 144px, 0);
+    transform: translateY(-72px);
+    animation-timing-function: steps(1, start);
+  }
+  75% {
+    opacity: 1;
+    clip: rect(144px, 72px, 216px, 0);
+    transform: translateY(-144px);
+  }
+  100% {
+    opacity: 0;
+    clip: rect(144px, 72px, 216px, 0);
+    transform: translateY(-144px);
+  }
 }
 
 /* Quick font colors */
