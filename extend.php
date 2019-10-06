@@ -114,5 +114,33 @@ return [
                      <p class="spoiler-content">{ANYTHING3}</p>
                 </div>'
             );
+             $config->BBCodes->addCustom(
+               '[red]{TEXT30}[/red]',
+               '<span class="bbred">{TEXT30}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[orange]{TEXT31}[/orange]',
+               '<span class="bborange">{TEXT31}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[yellow]{TEXT32}[/yellow]',
+               '<span class="bbyellow">{TEXT32}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[green]{TEXT33}[/green]',
+               '<span class="bbgreen">{TEXT33}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[blue]{TEXT34}[/blue]',
+               '<span class="bbblue">{TEXT34}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[purple]{TEXT35}[/purple]',
+               '<span class="bbpurple">{TEXT35}</span>'
+            );
+             $config->BBCodes->addCustom(
+               '[hl]{TEXT36}[/hl]',
+               '<span class="bbhighlight">{TEXT36}</span>'
+            );
         })
 ];
