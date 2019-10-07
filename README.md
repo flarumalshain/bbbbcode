@@ -68,7 +68,7 @@ The following BBcodes are available:
 **Highlighter:**
 `[hl]This text will be highlighted.[/hl]`
 
-(That's a "L" no a one; it's hl for highlight.)
+(That's a "L" not a one; it's hl for highlight.)
 
 **Audio:**
 ~~~
