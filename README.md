@@ -35,6 +35,12 @@ The following BBcodes are available:
 
 `[spoiler="The text you click on"]The hidden text goes here.[/spoiler]`
 
+**Blurred Hover Spoiler:**
+
+`[blur]This is the blurred secret.[/blur]`
+
+(hover/press for 4 seconds to reveal)
+
 **Accordion:**
 ~~~
 [accordion header="YOUR HEADER TEXT"]The text that is hidden at first but then appears goes here[/accordion]
@@ -52,6 +58,17 @@ The following BBcodes are available:
 (repeat as many times as needed alternating chat-a and chat-b)
 
 ("space" BBcode at end of chat is optional - it adds some extra space)
+
+**Quick font colors:**
+
+`[red]This will be red.[/red]`
+
+(colors included: red, orange, yellow, green, blue, purple)
+
+**Highlighter:**
+`[hl]This text will be highlighted.[/hl]`
+
+(That's a "L" no a one; it's hl for highlight.)
 
 **Audio:**
 ~~~
