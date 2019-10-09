@@ -392,7 +392,7 @@ p[class^="bbspoiler-blur"]::after {
   font-weight: bold;
   top: 2px;
   left: 5px;
-  content: '...'; 
+  content: '......'; 
 }
 
 p[class^="bbspoiler-blur"]:hover {
@@ -407,7 +407,7 @@ p[class^="bbspoiler-blur"]:hover::before {
 }
 
 p[class^="bbspoiler-blur"]:hover::after {
-  animation: bbcountdown-after 5s;
+  animation: bbcountdown-after 5s linear 0 infinite;
 }
 
 @keyframes bbcountdown-before {
@@ -425,6 +425,7 @@ p[class^="bbspoiler-blur"]:hover::after {
 @keyframes bbcountdown-after {
   25% {
     opacity: 3;
+    width: 0;
   }
   50% {
     opacity: 2;
@@ -434,6 +435,7 @@ p[class^="bbspoiler-blur"]:hover::after {
   }
   100% {
     opacity: 0;
+    width: 2em;
   }
 }
 
