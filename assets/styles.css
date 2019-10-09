@@ -407,7 +407,7 @@ p[class^="bbspoiler-blur"]:hover::before {
 }
 
 p[class^="bbspoiler-blur"]:hover::after {
-  animation: bbcountdown-after 5s linear 0 infinite;
+  animation: bbcountdown-after 5s;
 }
 
 @keyframes bbcountdown-before {
@@ -429,9 +429,11 @@ p[class^="bbspoiler-blur"]:hover::after {
   }
   50% {
     opacity: 2;
+    width: 0.5em;
   }
   75% {
     opacity: 1;
+    width: 1em;
   }
   100% {
     opacity: 0;
