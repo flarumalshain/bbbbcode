@@ -82,12 +82,6 @@ The following BBcodes are available:
 
 `[action]Walks into a wall[/action]`
 
-**Animal:** 
-
-`[animal="ducky"]`
-
-(Currently there are three animals available: ducky, monkey, and squirrel)
-
 **Popup:** 
 
 `[pop button="Click Here" title="Hello" content="Thank you for being a friend."]`
