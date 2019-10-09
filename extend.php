@@ -54,7 +54,7 @@ return [
             );
             $config->BBCodes->addCustom(
                 '[animal="{TEXT7}"]',
-                '<span class="{TEXT7}"></span>'
+                '<span class="{TEXT7}"><strong>Sorry. There was bbcode here which showed an image of a cartoon animal but that particular bbcode is no longer supported. Admin/mod feel free to edit and delete this code from this post.</strong></span>'
             );
              $config->BBCodes->addCustom(
                '[pop button="{TEXT8}" title="{ANYTHING}" content="{ANYTHING1}"]',
@@ -99,7 +99,7 @@ return [
              $config->BBCodes->addCustom(
                '[chat-b="{TEXT29}" who="{TEXT28}"]',
                '<p class="chat-b Button--primary">
-                    <strong>{TEXT28}:</strong> {TEXT29}
+                    <strong>{TEXT28}:</strong> <span class="chat-b-normal">{TEXT29}</span>
                 </p>'
             );
              $config->BBCodes->addCustom(
@@ -108,15 +108,15 @@ return [
             );
              $config->BBCodes->addCustom(
                '[spoiler="{ANYTHING2}"]{ANYTHING3}[/spoiler]',
-               '<input type="checkbox"  id="bbspoiler-{ANYTHING2}" /> 
-                <label for="bbspoiler-{ANYTHING2}" >{ANYTHING2}</label>
-                <div class="bbspoiler">
-                {ANYTHING3}
-                </div>'
+               '<label class="bbspoiler">
+	            <input class="bbspoiler-switcher" type="checkbox" hidden>
+	            <div class="bbspoiler-button">{ANYTHING2} <i class="fas fa-chevron-down"></i></div>
+	            <div class="bbspoiler-content">{ANYTHING3}</div>
+                </label>'
             );
              $config->BBCodes->addCustom(
                '[blur]{ANYTHING4}[/blur]',
-               '<p class="bbspoiler-blur-{ANYTHING4}">
+               '<p class="bbspoiler-blur">
                 {ANYTHING4}
                 </p>'
             );
