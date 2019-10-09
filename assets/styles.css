@@ -347,7 +347,7 @@ input[id^="bbspoiler"] + label {
 input[id^="bbspoiler"] + label::after {
   content:"\f078";
   font-family: "Font Awesome 5 Free";
-  padding-left: 10px;
+  padding-left: 8px;
 }
 input[id^="bbspoiler"]:checked + label {
   color: #ccc;
@@ -355,7 +355,7 @@ input[id^="bbspoiler"]:checked + label {
 input[id^="bbspoiler"]:checked + label::after {
   content:"\f077";
   font-family: "Font Awesome 5 Free";
-  padding-left: 10px;
+  padding-left: 8px;
 }
 input[id^="bbspoiler"] ~ .bbspoiler {
   overflow: hidden;
@@ -371,74 +371,17 @@ input[id^="bbspoiler"]:checked + label + .bbspoiler{
 /* Blur */
 
 p[class^="bbspoiler-blur"] {
-  position: relative;
-  color: transparent;
-  text-shadow: 0 0 20px #000;
-  cursor: help;
-  padding-left: 8px;
-}
-
-p[class^="bbspoiler-blur"]::before, p[class^="bbspoiler-blur"]::after {
-  display: block;
-  position: absolute;
-  line-height: 1;
-  color: #222;
-  text-shadow: none;
-}
-
-p[class^="bbspoiler-blur"]::after {
-  opacity: 0;
-  font-size: 14px;
-  font-weight: bold;
-  top: 2px;
-  left: 5px;
-  content: '......'; 
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.75), 0 0 12px rgba(0, 0, 0, 0.75);
+  transition: all 2s ease-in-out;
+  color: rgba(0, 0, 0, 0);
+  padding-left: 10px;
 }
 
 p[class^="bbspoiler-blur"]:hover {
-  color: #222;
-  text-shadow: 0 0 0 transparent;
-  transition: all 1s;
-  transition-delay: 4s;
-}
-
-p[class^="bbspoiler-blur"]:hover::before {
-  animation: bbcountdown-before 5s;
-}
-
-p[class^="bbspoiler-blur"]:hover::after {
-  animation: bbcountdown-after 5s;
-}
-
-@keyframes bbcountdown-before {
-  25% {
-    opacity: 2;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-  	opacity: 0;
-  }
-}
-
-@keyframes bbcountdown-after {
-  25% {
-    opacity: 3;
-    width: 0;
-  }
-  50% {
-    opacity: 2;
-    width: 0.5em;
-  }
-  75% {
-    opacity: 1;
-    width: 1em;
-  }
-  100% {
-    opacity: 0;
-    width: 2em;
-  }
+  text-shadow: none;
+  color: #000;
+  cursor: help;
+  padding-left: 0;
 }
 
 /* Quick font colors */
