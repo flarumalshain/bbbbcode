@@ -66,6 +66,7 @@ The following BBcodes are available:
 (colors included: red, orange, yellow, green, blue, purple)
 
 **Highlighter:**
+
 `[hl]This text will be highlighted.[/hl]`
 
 (That's a "L" not a one; it's hl for highlight.)
