@@ -389,14 +389,11 @@ p[class^="bbspoiler-blur"]::before, p[class^="bbspoiler-blur"]::after {
 
 p[class^="bbspoiler-blur"]::after {
   opacity: 0;
-  top: 50%;
-  left: calc(50% - 36px);
-  width: 60px;
-  font-size: 60px;
-  line-height: 72px;
-  text-align: center;
-  clip: rect(0, 72px, 72px, 0);
-  content: '3 2 1';  
+  font-size: 14px;
+  font-weight: bold;
+  top: 2px;
+  left: 5px;
+  content: 'hold...'; 
 }
 
 p[class^="bbspoiler-blur"]:hover {
@@ -407,47 +404,37 @@ p[class^="bbspoiler-blur"]:hover {
 }
 
 p[class^="bbspoiler-blur"]:hover::before {
-  animation: bbcountdown-before 5s forwards;
+  animation: bbcountdown-before 5s;
 }
 
 p[class^="bbspoiler-blur"]:hover::after {
-  animation: bbcountdown-after 5s forwards;
+  animation: bbcountdown-after 5s;
 }
 
 @keyframes bbcountdown-before {
   25% {
-    transform: translateY(-24px);
+    opacity: 2;
   }
   75% {
     opacity: 1;
   }
   100% {
   	opacity: 0;
-    transform: translateY(-24px);
   }
 }
 
 @keyframes bbcountdown-after {
   25% {
-    opacity: 1;
-    clip: rect(0, 72px, 72px, 0);
-    transform: translateY(0);
-    animation-timing-function: steps(1, start);
+    opacity: 3;
   }
   50% {
-    clip: rect(72px, 72px, 144px, 0);
-    transform: translateY(-72px);
-    animation-timing-function: steps(1, start);
+    opacity: 2;
   }
   75% {
     opacity: 1;
-    clip: rect(144px, 72px, 216px, 0);
-    transform: translateY(-144px);
   }
   100% {
     opacity: 0;
-    clip: rect(144px, 72px, 216px, 0);
-    transform: translateY(-144px);
   }
 }
 
