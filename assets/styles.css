@@ -375,7 +375,7 @@ p[class^="bbspoiler-blur"] {
   color: transparent;
   text-shadow: 0 0 20px #000;
   cursor: help;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 p[class^="bbspoiler-blur"]::before, p[class^="bbspoiler-blur"]::after {
@@ -383,7 +383,6 @@ p[class^="bbspoiler-blur"]::before, p[class^="bbspoiler-blur"]::after {
   position: absolute;
   line-height: 1;
   color: #222;
-  text-align: center;
   text-shadow: none;
 }
 
@@ -393,7 +392,7 @@ p[class^="bbspoiler-blur"]::after {
   font-weight: bold;
   top: 2px;
   left: 5px;
-  content: 'hold...'; 
+  content: '...'; 
 }
 
 p[class^="bbspoiler-blur"]:hover {
