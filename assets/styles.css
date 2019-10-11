@@ -312,7 +312,7 @@ a.popbtn.Button.Button--primary {
 /* Spoiler */
 
 summary:focus {
-  outline: 0;
+  outline: none;
 }
 
 details {
