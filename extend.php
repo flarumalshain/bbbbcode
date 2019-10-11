@@ -15,7 +15,7 @@ use s9e\TextFormatter\Configurator;
 return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/zerosonesfun-bbbbcode/styles.css">';
+            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/zerosonesfun-bbbbcode/styles.css"><script src="/assets/extensions/zerosonesfun-bbbbcode/index.js"></script>';
         }),
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
@@ -108,11 +108,10 @@ return [
             );
              $config->BBCodes->addCustom(
                '[spoiler="{ANYTHING2}"]{ANYTHING3}[/spoiler]',
-               '<label class="bbspoiler">
-	            <input class="bbspoiler-switcher" type="checkbox" hidden>
-	            <div class="bbspoiler-button">{ANYTHING2} <i class="fas fa-chevron-down"></i></div>
-	            <div class="bbspoiler-content">{ANYTHING3}</div>
-                </label>'
+               '<details>
+                <summary>{ANYTHING2}</summary>
+                <p>{ANYTHING3}</p>
+                </details>'
             );
              $config->BBCodes->addCustom(
                '[blur]{ANYTHING4}[/blur]',
