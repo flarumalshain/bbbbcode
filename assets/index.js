@@ -1,73 +1,194 @@
-void (function (root, factory) {
-  if (typeof define === 'function' && define.amd) define(factory)
-  else if (typeof exports === 'object') module.exports = factory()
-  else factory()
-}(this, function () {
-  var DETAILS = 'details'
-  var SUMMARY = 'summary'
-
-  var supported = checkSupport()
-  if (supported) return
-
-  // Add a classname
-  document.documentElement.className += ' no-details'
-
-  window.addEventListener('click', clickHandler)
-
-  injectStyle('details-polyfill-style',
-    'html.no-details ' + DETAILS + ':not([open]) > :not(' + SUMMARY + ') { display: none; }\n' +
-    'html.no-details ' + DETAILS + ' > ' + SUMMARY + ':before { content: "\u25b6"; display: inline-block; font-size: .8em; width: 1.5em; }\n' +
-    'html.no-details ' + DETAILS + '[open] > ' + SUMMARY + ':before { content: "\u25bc"; }')
-
-  /*
-   * Click handler for `<summary>` tags
-   */
-
-  function clickHandler (e) {
-    if (e.target.nodeName.toLowerCase() === 'summary') {
-      var details = e.target.parentNode
-      if (!details) return
-
-      if (details.getAttribute('open')) {
-        details.open = false
-        details.removeAttribute('open')
-      } else {
-        details.open = true
-        details.setAttribute('open', 'open')
+/*
+Details Element Polyfill 2.4.0
+Copyright © 2019 Javan Makhmali
+ */
+(function() {
+  "use strict";
+  var element = document.createElement("details");
+  var elementIsNative = typeof HTMLDetailsElement != "undefined" && element instanceof HTMLDetailsElement;
+  var support = {
+    open: "open" in element || elementIsNative,
+    toggle: "ontoggle" in element
+  };
+  var styles = '\ndetails, summary {\n  display: block;\n}\ndetails:not([open]) > *:not(summary) {\n  display: none;\n}\nsummary::before {\n  content: "►";\n  padding-right: 0.3rem;\n  font-size: 0.6rem;\n  cursor: default;\n}\n[open] > summary::before {\n  content: "▼";\n}\n';
+  var _ref = [], forEach = _ref.forEach, slice = _ref.slice;
+  if (!support.open) {
+    polyfillStyles();
+    polyfillProperties();
+    polyfillToggle();
+    polyfillAccessibility();
+  }
+  if (support.open && !support.toggle) {
+    polyfillToggleEvent();
+  }
+  function polyfillStyles() {
+    document.head.insertAdjacentHTML("afterbegin", "<style>" + styles + "</style>");
+  }
+  function polyfillProperties() {
+    var prototype = document.createElement("details").constructor.prototype;
+    var setAttribute = prototype.setAttribute, removeAttribute = prototype.removeAttribute;
+    var open = Object.getOwnPropertyDescriptor(prototype, "open");
+    Object.defineProperties(prototype, {
+      open: {
+        get: function get() {
+          if (this.tagName == "DETAILS") {
+            return this.hasAttribute("open");
+          } else {
+            if (open && open.get) {
+              return open.get.call(this);
+            }
+          }
+        },
+        set: function set(value) {
+          if (this.tagName == "DETAILS") {
+            return value ? this.setAttribute("open", "") : this.removeAttribute("open");
+          } else {
+            if (open && open.set) {
+              return open.set.call(this, value);
+            }
+          }
+        }
+      },
+      setAttribute: {
+        value: function value(name, _value) {
+          var _this = this;
+          var call = function call() {
+            return setAttribute.call(_this, name, _value);
+          };
+          if (name == "open" && this.tagName == "DETAILS") {
+            var wasOpen = this.hasAttribute("open");
+            var result = call();
+            if (!wasOpen) {
+              var summary = this.querySelector("summary");
+              if (summary) summary.setAttribute("aria-expanded", true);
+              triggerToggle(this);
+            }
+            return result;
+          }
+          return call();
+        }
+      },
+      removeAttribute: {
+        value: function value(name) {
+          var _this2 = this;
+          var call = function call() {
+            return removeAttribute.call(_this2, name);
+          };
+          if (name == "open" && this.tagName == "DETAILS") {
+            var wasOpen = this.hasAttribute("open");
+            var result = call();
+            if (wasOpen) {
+              var summary = this.querySelector("summary");
+              if (summary) summary.setAttribute("aria-expanded", false);
+              triggerToggle(this);
+            }
+            return result;
+          }
+          return call();
+        }
+      }
+    });
+  }
+  function polyfillToggle() {
+    onTogglingTrigger(function(element) {
+      element.hasAttribute("open") ? element.removeAttribute("open") : element.setAttribute("open", "");
+    });
+  }
+  function polyfillToggleEvent() {
+    if (window.MutationObserver) {
+      new MutationObserver(function(mutations) {
+        forEach.call(mutations, function(mutation) {
+          var target = mutation.target, attributeName = mutation.attributeName;
+          if (target.tagName == "DETAILS" && attributeName == "open") {
+            triggerToggle(target);
+          }
+        });
+      }).observe(document.documentElement, {
+        attributes: true,
+        subtree: true
+      });
+    } else {
+      onTogglingTrigger(function(element) {
+        var wasOpen = element.getAttribute("open");
+        setTimeout(function() {
+          var isOpen = element.getAttribute("open");
+          if (wasOpen != isOpen) {
+            triggerToggle(element);
+          }
+        }, 1);
+      });
+    }
+  }
+  function polyfillAccessibility() {
+    setAccessibilityAttributes(document);
+    if (window.MutationObserver) {
+      new MutationObserver(function(mutations) {
+        forEach.call(mutations, function(mutation) {
+          forEach.call(mutation.addedNodes, setAccessibilityAttributes);
+        });
+      }).observe(document.documentElement, {
+        subtree: true,
+        childList: true
+      });
+    } else {
+      document.addEventListener("DOMNodeInserted", function(event) {
+        setAccessibilityAttributes(event.target);
+      });
+    }
+  }
+  function setAccessibilityAttributes(root) {
+    findElementsWithTagName(root, "SUMMARY").forEach(function(summary) {
+      var details = findClosestElementWithTagName(summary, "DETAILS");
+      summary.setAttribute("aria-expanded", details.hasAttribute("open"));
+      if (!summary.hasAttribute("tabindex")) summary.setAttribute("tabindex", "0");
+      if (!summary.hasAttribute("role")) summary.setAttribute("role", "button");
+    });
+  }
+  function eventIsSignificant(event) {
+    return !(event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.target.isContentEditable);
+  }
+  function onTogglingTrigger(callback) {
+    addEventListener("click", function(event) {
+      if (eventIsSignificant(event)) {
+        if (event.which <= 1) {
+          var element = findClosestElementWithTagName(event.target, "SUMMARY");
+          if (element && element.parentNode && element.parentNode.tagName == "DETAILS") {
+            callback(element.parentNode);
+          }
+        }
+      }
+    }, false);
+    addEventListener("keydown", function(event) {
+      if (eventIsSignificant(event)) {
+        if (event.keyCode == 13 || event.keyCode == 32) {
+          var element = findClosestElementWithTagName(event.target, "SUMMARY");
+          if (element && element.parentNode && element.parentNode.tagName == "DETAILS") {
+            callback(element.parentNode);
+            event.preventDefault();
+          }
+        }
+      }
+    }, false);
+  }
+  function triggerToggle(element) {
+    var event = document.createEvent("Event");
+    event.initEvent("toggle", false, false);
+    element.dispatchEvent(event);
+  }
+  function findElementsWithTagName(root, tagName) {
+    return (root.tagName == tagName ? [ root ] : []).concat(typeof root.getElementsByTagName == "function" ? slice.call(root.getElementsByTagName(tagName)) : []);
+  }
+  function findClosestElementWithTagName(element, tagName) {
+    if (typeof element.closest == "function") {
+      return element.closest(tagName);
+    } else {
+      while (element) {
+        if (element.tagName == tagName) {
+          return element;
+        } else {
+          element = element.parentNode;
+        }
       }
     }
   }
-
-  /*
-   * Checks for support for `<details>`
-   */
-
-  function checkSupport () {
-    var el = document.createElement(DETAILS)
-    if (!('open' in el)) return false
-
-    el.innerHTML = '<' + SUMMARY + '>a</' + SUMMARY + '>b'
-    document.body.appendChild(el)
-
-    var diff = el.offsetHeight
-    el.open = true
-    var result = (diff != el.offsetHeight)
-
-    document.body.removeChild(el)
-    return result
-  }
-
-  /*
-   * Injects styles (idempotent)
-   */
-
-  function injectStyle (id, style) {
-    if (document.getElementById(id)) return
-
-    var el = document.createElement('style')
-    el.id = id
-    el.innerHTML = style
-
-    document.getElementsByTagName('head')[0].appendChild(el)
-  }
-})); // eslint-disable-line semi
+})();
