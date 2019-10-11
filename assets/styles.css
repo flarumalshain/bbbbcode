@@ -311,18 +311,12 @@ a.popbtn.Button.Button--primary {
 
 /* Spoiler */
 
-.bbspoiler {
-	pointer-events: none;
-	cursor: pointer;
+summary:focus {
+  outline: 0;
 }
-.bbspoiler-button {
-	pointer-events: auto;
-}
-.bbspoiler-content {
-	display: none;
-}
-.bbspoiler-switcher:checked ~ .bbspoiler-content {
-	display: block;
+
+details {
+  cursor: pointer;
 }
 
 /* Blur */
