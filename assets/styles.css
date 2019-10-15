@@ -367,9 +367,8 @@ details {
     );
 }
 
-/* Responsive media */
+/* Responsive audio */
 
-audio, video {
+audio {
   width: 100%;
-  height: auto;
 }  
