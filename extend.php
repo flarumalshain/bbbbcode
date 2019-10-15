@@ -72,22 +72,10 @@ return [
             </div>'
             );
              $config->BBCodes->addCustom(
-               '[audio mp3="{URL22}" ogg="{URL23}"]',
-               '<p><audio controls>
+               '[audio mp3="{URL22?}" ogg="{URL23?}"]',
+               '<p><audio class="bbaudio inline-exclude" controls>
                         <source src="{URL22}" type="audio/mpeg">
                         <source src="{URL23}" type="audio/ogg">
-                </audio></p>'
-            );
-             $config->BBCodes->addCustom(
-               '[audio mp3="{URL24}"]',
-               '<p><audio controls>
-                        <source src="{URL24}" type="audio/mpeg">
-                </audio></p>'
-            );
-             $config->BBCodes->addCustom(
-               '[audio ogg="{URL25}"]',
-               '<p><audio controls>
-                        <source src="{URL25}" type="audio/ogg">
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
