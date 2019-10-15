@@ -366,3 +366,10 @@ details {
       rgba(255,250,150,0.25)
     );
 }
+
+/* Responsive media */
+
+audio, video {
+  width: 100%;
+  height: auto;
+}  
