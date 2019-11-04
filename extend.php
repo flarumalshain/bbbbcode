@@ -135,5 +135,13 @@ return [
                '[hl]{TEXT36}[/hl]',
                '<span class="bbhighlight">{TEXT36}</span>'
             );
+             $config->BBCodes->addFromRepository('BACKGROUND');
+             $config->BBCodes->addFromRepository('FONT');
+             $config->BBCodes->addFromRepository('TABLE');
+             $config->BBCodes->addFromRepository('TBODY');
+             $config->BBCodes->addFromRepository('TD');
+             $config->BBCodes->addFromRepository('TH');
+             $config->BBCodes->addFromRepository('TR');
+             $config->BBCodes->addFromRepository('THEAD');
         })
 ];
