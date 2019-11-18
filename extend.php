@@ -79,6 +79,13 @@ return [
                 </audio></p>'
             );
              $config->BBCodes->addCustom(
+               '[audio m4a="{URL3?}" oggm4a="{URL4?}"]',
+               '<p><audio class="bbaudio inline-exclude" style="width:100%;outline:none;" controls>
+                        <source src="{URL3}" type="audio/mp4">
+                        <source src="{URL4}" type="audio/ogg">
+                </audio></p>'
+            );
+             $config->BBCodes->addCustom(
                '[chat-a="{TEXT27}" who="{TEXT26}"]',
                '<p class="chat-a Button">
                     <strong>{TEXT26}:</strong> {TEXT27}
