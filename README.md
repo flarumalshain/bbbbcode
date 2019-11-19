@@ -73,11 +73,12 @@ The following BBcodes are available:
 
 **Audio:**
 ~~~
-[audio mp3="https://archive.org/download/MLKDream/MLKDream_64kb.mp3" ogg="https://archive.org/download/MLKDream/MLKDream.ogg"]
-[audio mp3="https://archive.org/download/MLKDream/MLKDream_64kb.mp3"]
-[audio ogg="https://archive.org/download/MLKDream/MLKDream.ogg"]
+[audio mp3="song.mp3" ogg="song.ogg"]
+[audio mp3="song.mp3"]
+[audio ogg="song.ogg"]
+[audio m4a="song.m4a"]
 ~~~
-(You may put a mp3 and ogg file together for maximum browser compatibility, or just post a mp3 alone or an ogg file alone.)
+(You may put a mp3 and ogg file together for maximum browser compatibility, or just post a mp3 alone or an ogg file alone. If you'd like, instead of using mp3, you may use m4a.)
 
 **Action:** 
 
