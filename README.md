@@ -77,9 +77,9 @@ The following BBcodes are available:
 [audio mp3="song.mp3"]
 [audio ogg="song.ogg"]
 [audio m4a="song.m4a"]
-[audio mp3="song.mp3" parameter="loop" width="100"]
+[audio mp3="song.mp3" width="50"]
 ~~~
-(You may put a mp3 and ogg file together for maximum browser compatibility, or just post a mp3 alone or an ogg file alone. If you'd like, instead of using mp3, you may use m4a. Also, as the last example shows, you can add loop or autoplay as the parameter and modify the width.)
+(You may put a mp3 and ogg file together for maximum browser compatibility, or just post a mp3, ogg, or m4a file alone. Also, as the last example shows, you may modify the width. The width will become a percentage and by delfault, if you choose not to declare a width, the player will be 100% width.)
 
 **Action:** 
 
