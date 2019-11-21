@@ -72,7 +72,7 @@ return [
             </div>'
             );
              $config->BBCodes->addCustom(
-               '[audio mp3="{URL1?}" m4a="{URL2?}" ogg="{URL3?}" width="{NUMBER?}"]',
+               '[audio mp3="{URL1?}" m4a="{URL2?}" ogg="{URL3?}" width="{NUMBER?;defaultValue=100}"]',
                '<p><audio class="bbaudio inline-exclude" style="width:{NUMBER}%;" controls>
                         <source src="{URL1}" type="audio/mpeg">
                         <source src="{URL2}" type="audio/mp4">
