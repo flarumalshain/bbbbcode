@@ -91,5 +91,3 @@ The following BBcodes are available:
 **Popup:** 
 
 `[pop button="Click Here" title="Hello" content="Thank you for being a friend."]`
-
-This Flarum post has screenshots: https://discuss.flarum.org/d/18958-big-beautiful-bbcodes
