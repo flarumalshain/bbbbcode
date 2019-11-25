@@ -3,7 +3,6 @@
 /*
  * This file is part of Flarum.
  *
- * The creator of bbbbcode is Billy Wilcosky. https://wilcosky.com
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
