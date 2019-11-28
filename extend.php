@@ -138,6 +138,10 @@ return [
                '[hl]{TEXT36}[/hl]',
                '<span class="bbhighlight">{TEXT36}</span>'
             );
+             $config->BBCodes->addCustom(
+               '[kbd]{TEXT37}[/kbd]',
+               '<kbd>{TEXT37}</kbd>'
+            );
              $config->BBCodes->addFromRepository('BACKGROUND');
              $config->BBCodes->addFromRepository('FONT');
              $config->BBCodes->addFromRepository('TABLE');
