@@ -1,7 +1,7 @@
 # bbbbcode
-**Big Beautiful BBcode**
+**Big Beautiful BBCode**
 
-A Flarum extension which adds additional bbcodes. It is lightweight; all of the bbcodes are HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler bbcode will work in IE and Edge browsers.
+A Flarum extension which adds additional BBCodes. It is lightweight; all of the BBCodes are HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler BBCode will work in IE and Edge browsers.
 
 ## Install
 
@@ -23,7 +23,7 @@ A Flarum extension which adds additional bbcodes. It is lightweight; all of the 
 
 ## Usage
 
-The following BBcodes are available:
+The following BBCodes are available:
 
 **Tooltip:** 
 
