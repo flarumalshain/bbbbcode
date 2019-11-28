@@ -1,7 +1,7 @@
 # bbbbcode
 **Big Beautiful BBcode**
 
-A Flarum extension which adds additional bbcodes. It is lightweight; all of the bbcodes are HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler bbcode will work in IE and Edge browsers. One day, this small bit of JavaScript may be removed if it is determined that it is no longer necessary.
+A Flarum extension which adds additional bbcodes. It is lightweight; all of the bbcodes are HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler bbcode will work in IE and Edge browsers.
 
 ## Install
 
@@ -91,3 +91,11 @@ The following BBcodes are available:
 **Popup:** 
 
 `[pop button="Click Here" title="Hello" content="Thank you for being a friend."]`
+
+**KBD:**
+
+`Please type [kbd]Y[/kbd] for yes.`
+
+**Also included:**
+
+`[background]`, `[font]`, and HTML table BBCodes. Finally, Flarum already comes with a core BBCode extension which adds other standard BBCodes such as bold, strikethrough, image, link, etc.
