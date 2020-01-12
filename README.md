@@ -7,7 +7,7 @@ A Flarum extension which adds additional BBCode. It installs multiple separate B
 
 `composer require zerosonesfun/bbbbcode`
 
-This one command will install all of the following. Then, simply activate what you want. Technically, you could instead just activate one or two of the following if that's all you want.
+This above one command will install all of the following. Then, simply activate what you want. Technically, you could instead just activate one or two of the following if that's all you want.
 
 ~~~
 composer require zerosonesfun/spoiler
