@@ -1,6 +1,6 @@
 {
     "name": "zerosonesfun/bbbbcode",
-    "description": "Big Beautiful BBcode",
+    "description": "Big Beautiful BBCode (Installs multiple BBCode extensions. Keep this extension enabled if you want HTML table and horizontal line BBCode.)",
     "authors": [
         {
             "name": "Billy Wilcosky",
@@ -10,16 +10,25 @@
     "type": "flarum-extension",
     "license": "MIT",
     "require": {
-        "flarum/core": "^0.1.0-beta.8"
+        "flarum/core": "^0.1.0-beta.8",
+        "zerosonesfun/spoiler": "^1.0",
+        "zerosonesfun/blur": "^1.0",
+        "zerosonesfun/tooltip": "^1.0",
+        "zerosonesfun/font": "^1.0",
+        "zerosonesfun/chat": "^1.0",
+        "zerosonesfun/pop": "^1.0",
+        "zerosonesfun/action": "^1.0",
+        "zerosonesfun/accordion": "^1.0",
+        "zerosonesfun/flarum-bbcode-audio": "^1.0"
     },
     "autoload": {
         "psr-4": {"ZerosOnesFun\\bbbbcode\\": "src/"}
     },
     "extra": {
         "flarum-extension": {
-            "title": "bbbbcode",
+            "title": "BBCode - BBBBCode",
             "icon": {
-                "name": "fas fa-heart",
+                "name": "fas fa-bold",
                 "backgroundColor": "#ddd",
                 "color": "#000"
             }
