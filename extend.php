@@ -24,5 +24,6 @@ return [
              $config->BBCodes->addFromRepository('TH');
              $config->BBCodes->addFromRepository('TR');
              $config->BBCodes->addFromRepository('THEAD');
+             $config->BBCodes->addFromRepository('HR');
         })
 ];
