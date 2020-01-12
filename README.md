@@ -1,7 +1,7 @@
 # bbbbcode
 **Big Beautiful BBCode**
 
-A Flarum extension which adds additional BBCodes. It is lightweight; all of the BBCodes are HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler BBCode will work in IE and Edge browsers.
+A Flarum extension which adds additional BBCode. It installs multiple separate BBCode extensions so that you have the power to enable just what you need. Keep this extension (bbbbcode) enabled if you want HTML table and horizontal line BBCode. All BBCode is lightweight; they are all HTML and CSS only. However, currently a JavaScript polyfill is added which ensures that the spoiler BBCode will work in IE and Edge browsers.
 
 ## Install
 
@@ -23,7 +23,7 @@ A Flarum extension which adds additional BBCodes. It is lightweight; all of the 
 
 ## Usage
 
-The following BBCodes are available:
+The following BBCode are available:
 
 **Tooltip:** 
 
@@ -98,4 +98,4 @@ The following BBCodes are available:
 
 **Also included:**
 
-`[background]`, `[font]`, and HTML table BBCodes. Finally, Flarum already comes with a core BBCode extension which adds other standard BBCodes such as bold, strikethrough, image, link, etc.
+`[background]`, `[font]`, `[hr]`, and HTML table BBCodes. Finally, Flarum already comes with a core BBCode extension which adds other standard BBCodes such as bold, strikethrough, image, link, etc.
