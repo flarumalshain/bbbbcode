@@ -25,5 +25,6 @@ return [
              $config->BBCodes->addFromRepository('TR');
              $config->BBCodes->addFromRepository('THEAD');
              $config->BBCodes->addFromRepository('HR');
+             $config->BBCodes->addFromRepository('FLOAT');
         })
 ];
